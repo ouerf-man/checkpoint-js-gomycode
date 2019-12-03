@@ -1,0 +1,138 @@
+body{
+    Background-image: Linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                    Linear-gradient(127deg, black, black 70.71%),
+                    Linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+
+    margin : 0 ; /* delete space ly deeyer bel page*/
+}
+
+/* navbar code for all pages*/
+nav{
+    height: 70px;
+    display: flex; 
+    /*
+    display flex to delete the line-break after every nav items(logo w links)
+    ** we can use display inline-block (display inline-block so we can edit the size of the elements and remove the line break)
+    ***** if you want to use display : inline-block : use it on the items inside the nav .. not on the nav itself
+    */
+    align-items: center; /* to center the elements vertically (logo and ul) */
+}
+.logo{
+    height: 100%;
+    display: flex; /*no effects but we need to set it so we can make some flexible operations (kima the one bellow)*/
+    align-items: center;/* to center the element vertically (img) try to remove these lines and see the difference */
+}
+.navbar-links{
+    /* use 
+    display: inline-block;
+    to remove the line break after every .navbar-links (ul)
+    if u don't want to use display : flex 3al nav 
+    */ 
+    margin: 0 0 0 18%; /* margin top 0 margin right 0 margin bottom 0 margin left 18%*/
+}
+.nav-item{
+    /*here we used inline-block to remove line-breaks after every li (.nav-item)
+    you can still use display: flex ! but not here .. use it on the container (in our case .navbar-links)
+    */
+    display: inline-block;
+}
+
+.nav-item a{
+    /*some basic modifications on the a element inside every li element)*/
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+.nav-item a:hover{
+    /*color red when we hover on a*/
+    color: red;
+}
+
+/*courses page*/
+
+.header{
+    height: 450px;
+    background-image: url("https://iyadhkhalfallah.github.io/checkpointsGMC/res/webdev3.png");
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.header h1{
+    margin-top: 0;
+    font-size: 6em;
+    font-family: 'Bree Serif', serif;
+    color: #fff;
+    position: relative; /*
+        Un élément positionné de façon relative est un élément dont la propriété 
+        de position calculée est relative. Dans ce cas, les propriétés top ou bottom 
+        indiquent le décalage vertical à appliquer et left ou right indiquent 
+        le décalage horizontal. (https://developer.mozilla.org/fr/docs/Web/CSS/position)
+    */
+    top: 40%; /*remove position:relative and this property will not have any effect*/
+    text-align: center;
+    text-shadow: 5px 2px rgb(12, 11, 11);
+}
+
+.courses{
+    margin-top: 5%;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.row img{
+    margin-right: 4% ;
+}
+
+.courses-form{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.courses-form h4{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.buttons{
+    margin-bottom: 20px;
+}
+
+
+/* Contact */ 
+
+.input-groupe{
+    text-align: center;
+    color: white;
+}
+
+.input-contact{
+    display: block;
+    margin: 10px auto;
+    width: 20%;
+    height: 20px;
+    border-radius:5px ;
+}
+
+.contact-form{
+    margin: 30px 0 ;
+}
+
+.submit{
+    width: 80px;
+    height: 29px;
+    margin-top: 10px;
+    border-radius: 3px ;
+    background-color: #337ab7 ;
+    border-color: #337ab7;
+    color: white;
+}
